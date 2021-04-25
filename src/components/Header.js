@@ -1,16 +1,14 @@
-import React from 'react';
-
+import React from "react";
 
 function Header() {
-
-  
-    return (
-      <div className="header">
-  
-  
+  return (
+    <header className="header">
+      <h1>Where in the world ?</h1>
+      <div>
+        <button>dark</button> <p>Dark mode</p>
       </div>
-    );
-  }
-  
-  export default Header;
-  
+    </header>
+  );
+}
+
+export default Header;

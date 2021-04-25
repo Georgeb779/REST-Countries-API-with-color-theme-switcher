@@ -1,4 +1,5 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -6,14 +7,62 @@ html {
 
 body {
   margin: 0;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-img {
-  height: 120px;
-  width: 150px;
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2b3945;
+  font-size: 14px;
+  height: 80px;
+}
+
+.header h1 {
+  font-size: 20px;
+  margin: 0;
 }
 
 .country {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #202c37;
+  gap: 30px;
+}
+
+.country-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-rows: 220px 150px;
+      grid-template-rows: 220px 150px;
+  -ms-grid-columns: 17.2em;
+      grid-template-columns: 17.2em;
+  background-color: #2b3945;
+  -webkit-box-shadow: 0cm 0px 20px 0px #252627;
+          box-shadow: 0cm 0px 20px 0px #252627;
+  border-radius: 5px;
+}
+
+.country-flag img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.country-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,9 +70,25 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid black;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-weight: 600;
+  color: white;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.country-details p:first-child {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  font-weight: 600;
+  color: white;
+  font-size: 20px;
+}
+
+.country-result {
+  font-size: 11px;
+  font-weight: 100;
 }
 /*# sourceMappingURL=index.css.map */
