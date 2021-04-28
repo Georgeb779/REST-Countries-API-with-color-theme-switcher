@@ -1,0 +1,47 @@
+// Header layout
+
+.light-mode .header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+  padding-left: 25px;
+  align-items: center;
+  background-color: $White;
+  font-size: 14px;
+  height: 80px;
+  color: $Very-Dark-BlueText;
+  button {
+    font-size: 16px;
+    color: $Very-Dark-BlueText;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  &-theme {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+// Header layout
+
+// Country layout
+
+.light-mode .country {
+  background-color: $Very-Light-Gray;
+
+  &-container {
+    background-color: $White;
+    box-shadow: 0cm 0px 7px 1px #d6dce1;
+  }
+
+  &-details {
+    color: $Very-Dark-BlueText;
+  }
+}
+
+// Country layout

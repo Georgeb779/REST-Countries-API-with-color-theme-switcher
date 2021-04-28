@@ -2,6 +2,9 @@ import "./styles/index.scss";
 
 import Header from "./components/Header";
 import Search from "./components/Search";
+import Filter from "./components/Filter";
+
+
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect, Suspense, lazy } from "react";
 import axios from "axios";
@@ -24,6 +27,7 @@ function App() {
     <div className="App">
       <Header />
       <Search />
+      <Filter />
 
       <Suspense fallback={<div>Loading...</div>}>
       <Countries data={data}/>

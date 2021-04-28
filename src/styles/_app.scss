@@ -19,10 +19,29 @@ body {
   background-color: #2b3945;
   font-size: 14px;
   height: 80px;
+  color: $White;
+  transition: color 0.2s ease-in;
 
-  & h1 {
+  button {
+    font-size: 16px;
+    color: $White;
+    background: none;
+    outline: none;
+    border: none;
+  }
+  h1 {
     font-size: 20px;
     margin: 0;
+  }
+  p {
+    font-size: 12.5px;
+  }
+
+  &-theme {
+    display: flex;
+    width: 95px;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -35,6 +54,7 @@ body {
   justify-content: center;
   background-color: $Very-Dark-Blue;
   gap: 30px;
+  transition: background-color 0.1s ease-in;
 
   &-container {
     display: grid;
@@ -43,6 +63,7 @@ body {
     grid-template-columns: 17.2em;
     background-color: $Dark-Blue;
     box-shadow: 0cm 0px 20px 0px #252627;
+    transition: box-shadow 0.1s ease-in;
     border-radius: 5px;
   }
   &-flag img {
@@ -63,7 +84,6 @@ body {
   &-details p:first-child {
     justify-self: end;
     font-weight: 600;
-    color: $White;
     font-size: 20px;
   }
 
@@ -74,3 +94,71 @@ body {
 }
 
 // Country layout
+
+
+
+// media queries desktop
+@media (min-width: 769px) and (max-width: 2024px) {
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+    padding-left: 25px;
+    button {
+      font-size: 16px;
+      color: $White;
+      background: none;
+      outline: none;
+      border: none;
+    }
+    h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+    p {
+      font-size: 12.5px;
+    }
+  }
+
+  .country {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+
+    &-container {
+      display: grid;
+      justify-content: center;
+      grid-template-rows: 220px 150px;
+      grid-template-columns: 1fr;
+      border-radius: 5px;
+      margin: 45px;
+    }
+  }
+}
+// media queries desktop
+
+
+// media queries tablet
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .country {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+
+    &-container {
+      display: grid;
+      justify-content: center;
+      grid-template-rows: 190px 150px;
+      grid-template-columns: 1fr;
+      border-radius: 5px;
+      margin: 20px;
+      gap: 0px;
+
+    }
+  }
+}
+// media queries tablet

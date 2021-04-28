@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function Countries({ data }) {
   return (
     <div className="country">
@@ -13,7 +12,10 @@ function Countries({ data }) {
           <div className="country-details">
             <p>{item.name}</p>
             <p>
-              Population: <span className="country-result">{item.population.toLocaleString("en-US")}</span>{" "}
+              Population:{" "}
+              <span className="country-result">
+                {item.population.toLocaleString("en-US")}
+              </span>{" "}
             </p>
             <p>
               Region: <span className="country-result">{item.region}</span>{" "}
