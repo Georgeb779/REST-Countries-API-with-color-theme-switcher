@@ -1,5 +1,10 @@
 // Header layout
 
+.light-mode  html {
+  background-color: $White;
+
+  
+}
 .light-mode .header {
   display: flex;
   justify-content: space-between;
@@ -28,6 +33,48 @@
 }
 
 // Header layout
+// layout Search and filter
+
+.light-mode .sub-menu {
+  display: flex;
+  background-color: $Very-Light-Gray;
+  justify-content: space-between;
+}
+
+.light-mode .search {
+  background-color: $Very-Light-Gray;
+
+  input[type="text"] {
+    background-color: $White;
+    box-shadow: 0cm 0px 3px 1px #d6dce1;
+    color: $Very-Dark-BlueText;
+    border: none;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $Very-Dark-BlueText;
+    padding: 10px;
+  }
+}
+
+.light-mode .filter {
+  background-color: $Very-Light-Gray;
+
+  select {
+    background-color: $White;
+    box-shadow: 0cm 0px 3px 1px #d6dce1;
+    color: $Very-Dark-BlueText;
+    border: none;
+  }
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $Very-Dark-BlueText;
+    padding: 10px;
+  }
+}
+
+// layout Search and filter
 
 // Country layout
 
@@ -45,3 +92,23 @@
 }
 
 // Country layout
+
+// page style
+.light-mode .deatils {
+  background-color: $Very-Light-Gray;
+  color: $Very-Dark-BlueText;
+
+  &-btn {
+    background-color: $White;
+    color: $Very-Dark-BlueText;
+    box-shadow: 0cm 0px 7px 1px #d6dce1;
+  }
+}
+
+.light-mode .borders-btn {
+  background-color: $White;
+  color: $Very-Dark-BlueText;
+  box-shadow: 0cm 0px 7px 1px #d6dce1;
+}
+
+// page style

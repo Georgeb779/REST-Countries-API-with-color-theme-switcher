@@ -1,0 +1,15 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.spin-container {
+  display: flex;
+  height: 83.2vh;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  fill: hsl(210, 31%, 61%);
+}
